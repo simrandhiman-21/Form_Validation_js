@@ -3,47 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
         <form action="">
             <div class="input-flied">
                 <label for="">Full Name</label>
-                <input id="name-id"  type="text" placeholder="Enter Your Name " onkeyup="ValiditeName()">
+                <input id="name-id" type="text" placeholder="Enter Your Name" onkeyup="ValiditeName()">
                 <span id="name-err"></span>
             </div>
 
             <div class="input-flied">
-                <label for=""> Phone No</label>
-                <input id="phone-id" type="tel" placeholder="123 456 789 " onkeyup="ValiditePhone()">
-                <span id="phone-err"> </span>
+                <label for="">Phone No</label>
+                <input id="phone-id" type="tel" placeholder="123 456 789" onkeyup="ValiditePhone()">
+                <span id="phone-err"></span>
             </div>
 
             <div class="input-flied">
-                <label for="">Email Name</label>
-                <input id="email-id" type="email" placeholder="Enter Your Email  " onkeyup="ValiditeEmail()">
-                <span id="email-err"> </span>
+                <label for="">Email</label>
+                <input id="email-id" type="email" placeholder="Enter Your Email" onkeyup="ValiditeEmail()">
+                <span id="email-err"></span>
+            </div>
+
+            <div class="input-flied">
+                <label for="">Password</label>
+                <input id="password-id" type="password" placeholder="Enter Your Password" onkeyup="ValiditePassword()">
+                <p id="icon-id"><i class="fas fa-lock"></i></p>
+                <span id="password-err"></span>
             </div>
 
             <div class="input-flied">
                 <label for="">Enter Message</label>
-                <textarea id="message-id" rows="5" placeholder="Enter you Message"  onkeyup="ValiditeMessage()"></textarea>
-                <span id="message-err"> </span>
+                <textarea id="message-id" rows="5" placeholder="Enter Your Message" onkeyup="ValiditeMessage()"></textarea>
+                <span id="message-err"></span>
             </div>
 
             <div class="btn">
-                <button  id="submit-id" onclick="return ValiditeForm()">Submit</button>
+                <button id="submit-id" onclick="return ValiditeForm()">Submit</button>
                 <span id="submit-err"></span>
             </div>
-
-        </form>      
-
+        </form>
     </div>
     <script src="script.js"></script>
-   
 </body>
 </html>
